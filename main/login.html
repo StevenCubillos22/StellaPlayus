@@ -31,10 +31,14 @@
                <img src="/img/logo-removebg-preview.png" alt="Logo de la empresa">
             </div> 
             
-            <div class="login">
-                <form onsubmit="redirectToIndex(); return true;">
-                    <h2>Usuario</h2> <br><br><br><input type="text" name="first_name" /><br />
-                    <h2>Contraseña</h2> <br><br><br><input type="text" name="last_name" /><br />
+            <div class="login">0
+                <form onsubmit="redirectToIndex(); return true;" name = "formulario-login" method = "post" data-netlify = "true" >
+                    <h2>Usuario</h2> <br><br><br>
+                    <input type="text" name="first_name" /><br />
+
+                    <h2>Contraseña</h2> <br><br><br>
+                    <input type="password" name="last_name" /><br />
+
                     <input type="submit" value="Submit" />
                   </form>    
             

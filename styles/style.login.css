@@ -1,0 +1,137 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/fonts/ROBOTO-REGULAR.TTF');
+  }
+  /*src: url('./../fonts/ROBOTO-REGULAR.TTF'); */
+  
+  
+  @font-face {
+    font-family: 'Cocogoose';
+    src: url('/fonts/fonts/COCOGOOSE-PRO-REGULAR-TRIAL.TTF');
+  }
+/* src: url('./../fonts/COCOGOOSE-PRO-REGULAR-TRIAL.TTF');*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cocogoose', sans-serif;
+    background-color: #37266E;
+}
+
+.main-container {
+    
+    display: flex;
+    height:120vh;
+
+    justify-content: space-between;
+    /*max-width: 1200px;*/
+    max-width: 100vw;
+    
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 500px;
+}
+
+.navigation {
+    position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 510px;
+  background-color: #5C3FB8;
+  padding: 22px;
+}
+
+.navigation .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation .top h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.navigation .bottom img {
+    max-width: 100%;
+    border-radius: 9px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.center {
+    /*flex: 6;*/
+ 
+    display:flex;
+    flex-direction: column;
+    padding: 0 20px;
+    /*position:relative;*/
+    margin-left: 450px;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+
+.logo img {
+    max-width: 50%;
+}
+
+.logo{
+   text-align: center;
+ 
+}
+
+.login {
+   
+    width: 50vw; 
+  height: 30vh; /* Altura del formulario en 30% del viewport height */
+  padding: 10px; 
+  text-align: center;
+}
+
+
+.login h3 {
+    font-size: 18px;
+}
+
+.login input[type="text"] {
+    border-radius: 17px;
+    padding: 10px;
+    width: 43%; 
+    box-sizing: border-box;
+    margin-bottom: 15px; 
+}
+
+.login input[type="submit"] {
+    border-radius: 18px;
+    padding: 10px;
+    width: 43%; 
+    box-sizing: border-box;
+}
+
+
+.right {
+    flex: 1;
+    margin-right: 26px;
+    background-color: #37266E;   
+
+}
+
+.heading h2 {
+    font-size: 24px;
+    margin-bottom: 90px;
+}
+
+.image img {
+    
+    border-radius: 8px;
+}

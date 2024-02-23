@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice</title>
+    <Link rel="icon" type="image/x-icon" href="./../img/logo-favicon.png"/>
+    <link rel="stylesheet" href="./../styles/style.css">
+    <script type="module" src="./../script/script.js"></script>
+
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#">
+                <img src="./../img/logo-removebg-preview.png" alt="Logotipo" width="90px" height="160px" />
+            </a>
+        </div>
+
+        <div class="navigation"> <!--Div de la barra vertical de la izquierda-->
+            <ul>
+                <li>
+                    <a href="#">
+                        
+                        <div class="home flex-iconos"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                          </svg>
+                          <span>Inicio</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="search flex-iconos"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>
+                          
+                        <span>Explorar</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="community flex-icons"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                          </svg>
+                        <span>Comunidad</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="library"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                          </svg>
+                        <span>Mi biblioteca</span></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> <!--fin del sidebar-->
+
+
+    <div class="main-container">
+                <div class="navbar">
+                    <header>
+                        <button type="button">Música</button>
+                
+                        <button type="button">Podcasts</button>
+                
+                        <button type="button">Iniciar sesión</button>
+                    </header>
+                 </div>
+
+        <div class="container-carrousel">
+            <div class="carrousel" id="carrousel1">
+
+                <h2>Escuchados recientemente</h2><br>
+                <button class="btn slider__btn--left">‹</button>
+                <button class="btn slider__btn--right" >›</button> 
+                <div class="list">
+                    
+                        
+                            <div class="item">
+                                <img src="./../img/ghosttrick-removebg-preview.png" />
+                                <div class="play">
+                                    <span class="fa fa-play">&#8227;</span>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Ghost Trick</h4>
+                                    <p>Awakening</p>
+                                </div>
+                            </div>
+                            <div class="item reproducir" num-cancion="img1">
+                                <img src="./../img/Diseño_sin_título-removebg-preview.png" />
+                                <div class="play">
+                                    <span class="fa fa-play">&#8227;</span>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Sonic Adventure</h4>
+                                    <p>Emerald Coast</p>
+                                </div>
+                            </div>
+                            <div class="item reproducir" num-cancion="img3">
+                                <img src="./../img/p5-removebg-preview.png" />
+                                <div class="play">
+                                    <span class="fa fa-play">&#8227;</span>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Persona 5</h4>
+                                    <p>Blood of villain</p>
+                                </div>
+                                
+                            </div>
+                        
+                       
+                            <div class="item reproducir" num-cancion="img2">
+                                <img src="./../img/ya3.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play">&#8227;</span>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Yakuza 3</h4>
+                                    <p>TAKUMI 2009</p>
+                                </div>
+                            </div>
+                            <div class="item reproducir" num-cancion="img5">
+                                <img src="./../img/re2.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play">&#8227;</span>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Resident Evil 2</h4>
+                                    <p>Save Room</p>
+                                </div>
+                            </div>
+                            <div class="item reproducir" num-cancion="img8">
+                                <img src="./../img/fireemblem.jpg" />
+                                <div class="play">
+                                    <span class="fa fa-play">&#8227;</span>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Fire Emblem: Awakening</h4>
+                                    <p>Awakening</p>
+                                </div>
+                            </div>
+                        
+    
+                    
+                </div>
+    
+             </div>
+    
+    
+                <!-- -->
+    
+                    <div class="carrousel" id="carrousel2"> <h2>Éxitos para tí</h2><br>
+                        <button class="btn slider__btn--left">‹</button>
+                        <button class="btn slider__btn--right">›</button>
+    
+                        <div class="list"> 
+                            
+                           
+                                <div class="item">
+                                    <img src="./../img/nier-removebg-preview.png" />
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Nier Automata</h4>
+                                        <p>Cold Rain</p>
+                                    </div>
+                                </div>
+            
+                                <div class="item">
+                                    <img src="./../img/halflife-removebg-preview.png" />
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Half-Life</h4>
+                                        <p>main menu</p>
+                                    </div>
+                                </div>
+            
+                                <div class="item">
+                                    <img src="./../img/castlevania-removebg-preview.png" />
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Symphony of the Night</h4>
+                                        <p>Level 4</p>
+                                    </div>
+                                </div>
+    
+                            
+                            
+                                    <div class="item reproducir" num-cancion="img2">
+                                        <img src="./../img/ya3.jpg" />
+                                        <div class="play">
+                                            <span class="fa fa-play">&#8227;</span>
+                                        </div>
+                                        <div class="item-info">
+                                            <h4>Yakuza 3</h4>
+                                            <p>TAKUMI 2009</p>
+                                        </div>
+                                    </div>
+                                    <div class="item reproducir" num-cancion="img5">
+                                        <img src="./../img/re2.jpg" />
+                                        <div class="play">
+                                            <span class="fa fa-play">&#8227;</span>
+                                        </div>
+                                        <div class="item-info">
+                                            <h4>Resident Evil 2</h4>
+                                            <p>Save Room</p>
+                                        </div>
+                                    </div>
+                                    <div class="item reproducir" num-cancion="img8">
+                                        <img src="./../img/fireemblem.jpg" />
+                                        <div class="play">
+                                            <span class="fa fa-play">&#8227;</span>
+                                        </div>
+                                        <div class="item-info">
+                                            <h4>Fire Emblem: Awakening</h4>
+                                            <p>Awakening</p>
+                                        </div>
+                                        
+                                    </div>
+                        
+                        </div>  
+                    </div>
+           
+    
+                    <div class="carrousel" id="carrousel3">
+                        
+                        <h2>Lo más reciente</h2><br>
+                        <button class="btn slider__btn--left">‹</button>
+                        <button class="btn slider__btn--right">›</button>
+            
+                        <div class="list">
+                                    
+                                <div class="item reproducir" num-cancion="img6">
+                                    <img src="./../img/silenthill-removebg-preview.png" />
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Silent Hill 2</h4>
+                                        <p>No Dream</p>
+                                    </div>
+                                </div>
+                
+                                <div class="item reproducir" num-cancion="img7">
+                                    <img src="./../img/tekken.jpg">
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Tekken 7</h4>
+                                        <p>Character select</p>
+                                    </div>
+                                </div>
+                
+                                <div class="item reproducir" num-cancion="img4">
+                                    <img src="./../img/xeno-removebg-preview.png" />
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Xenoblade Chronicles</h4>
+                                        <p>Gaur Plains</p>
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="item reproducir" num-cancion="img2">
+                                    <img src="./../img/ya3.jpg" />
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Yakuza 3</h4>
+                                        <p>TAKUMI 2009</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./../img/re2.jpg" />
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Resident Evil 2</h4>
+                                        <p>Save Room</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./../img/fireemblem.jpg" />
+                                    <div class="play">
+                                        <span class="fa fa-play">&#8227;</span>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4>Fire Emblem: Awakening</h4>
+                                        <p>Awakening</p>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                    </div>    
+    
+                    <div class="square-cont">
+                        
+                        <div class="circle-row">
+                            <div class="square-item" id="item1">
+                                <img src="./../img/yuzokosh-removebg-preview.png" >
+                                <div class="hover-text">Yuzo Koshiro</div>
+                            </div>
+                            <div class="square-item" id="item2">
+                                <img src="./../img/hikaru-removebg-preview.png" >
+                                <div class="hover-text">Hikaru</div>
+                            </div>
+                        </div>
+                        <div class="circle-row">
+                            <div class="square-item" id="item3">
+                                <img src="./../img/liz-removebg-preview.png" >
+                                <div class="hover-text">Liz</div>
+                            </div>
+                            <div class="square-item" id="item4">
+                                <img src="./../img/toby-removebg-preview.png" >
+                                <div class="hover-text">Toby Fox</div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+                
+                
+                <div class="modal hidden">
+                    <button class="close-modal">&times;</button>
+                        <p id="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                </div>
+                <div class="overlay hidden"></div>
+
+
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-section">
+                            <h3>Contacto</h3>
+                            
+                            <p>Email: stella@example.com</p>
+                            
+                        </div>
+            
+                        <div class="footer-section">
+                            <h3>Enlaces Rápidos</h3>
+                            <ul>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Acerca de</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="footer-section">
+                            <h3>Redes Sociales</h3>
+                            <ul>
+                                <li><a href="#" target="_blank">Facebook</a></li>
+                                <li><a href="#" target="_blank">Twitter</a></li>
+                                <li><a href="#" target="_blank">Instagram</a></li>
+                            </ul>
+                        </div>
+                </footer>
+               
+    </div>
+
+</body>
+</html>

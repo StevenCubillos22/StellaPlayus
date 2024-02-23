@@ -1,0 +1,483 @@
+/* HTML: <div class="loader"></div> */
+
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('./../fonts/ROBOTO-REGULAR.TTF');
+  }
+
+  
+  @font-face {
+    font-family: 'Cocogoose';
+    src: url('./../fonts/Zetafonts\ -\ CocogoosePro-Regular.otf');
+  }
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Cocogoose', sans-serif;
+  scrollbar-color: #CCC20A;
+  /* background-color: #37266F; */
+
+  background: rgb(92,63,184);
+background: linear-gradient(227deg, rgba(92,63,184,1) 0%, rgba(55,38,111,0.9781162464985994) 49%);
+    
+}
+
+
+/*------------------------------------- Media query para pantallas con un ancho máximo de 768px----------------------------------------- */
+
+
+/* 
+.slide1 {
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
+  / IN THE END 
+  overflow: hidden;
+} */
+
+.list {
+  border: 2px;
+  border-radius: 16px;
+  margin: 12px;
+  background-color: #7A54F5;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+ 
+  width: calc(160px * 3 + 135px + 40px); 
+  position: relative;
+}
+
+.btn {
+  font-family: arial;
+  font-weight: bold;
+  color: #000000 !important;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px #737373;
+  box-shadow: 1px 1px 0px #CCC20A;
+  padding: 5px 6px;
+  border-radius: 11px;
+  border: 0px outset #FFFFFF;
+  background: #CCC20A;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #000000 !important;
+  background: #B8AF09;
+}
+
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+
+.carrousel h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+.carrousel .list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 140px;
+  width: 160px;
+  padding: 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.carrousel .list .item:hover {
+  background-color: #8d6ef4;
+}
+
+.carrousel .list .item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.carrousel .list .item .play {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.carrousel .list .item .play .fa{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  top: -10px;
+  transform: translateX(50%);
+  padding: 18px;
+  background-color: #CCC20A;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+
+.carrousel .list .item:hover .play .fa{
+
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+
+.carrousel .list .item .item-info {
+  width: 90%;
+  text-align: center;
+}
+
+.item-info p {
+  font-family: 'Roboto';
+}
+
+.carrousel .list .item h4 {
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carrousel .list .item .p {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.carrousel hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+
+/* Square Styles */
+.square-cont {
+  position: absolute;
+  top: 0;
+  right: 0; 
+  padding: 10px;
+}
+
+.circle-row {
+  display: flex;
+}
+
+.square-item {
+  position:relative;
+  width: 140px;
+  height: 140px;
+  background-color: #CCC20A;
+  border-radius: 50%;
+  margin-right: 100px;
+  margin-top: 60px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.square-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+}
+
+.square-item:hover img {
+  opacity: 0;
+}
+
+
+.square-item .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.square-item:hover .hover-text {
+  /* display: block; */
+  opacity: 1;
+}
+
+
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+
+
+.footer-container {
+  background-color: #5C3FB8;
+}
+
+
+.footer-section h3 p li{
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 780px) {
+  .list {
+    grid-template-columns: 1rf;
+  }      
+}
+
+
+@media screen and (max-width: 738px) {
+  .list{
+   /*  display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fill,minmax(1fr,1fr));
+    width: 100%;
+
+  }
+.item{
+  display: flex;
+  flex-direction: row;
+}  
+  
+    .navbar {
+      
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .navbar button {
+      
+      width: 100px;
+      height: 30px;
+      margin-right: 30px;
+    }
+  
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 175px;
+      background-color: #5C3FB8;
+      padding: 22px;
+    }
+  
+    .flex-iconos {
+      display: flex;
+      align-items: left;
+      gap: 15px;
+    }
+  
+    .logo img {
+      width: 124px;
+    }
+  
+    .icon {
+      width: 21px;
+    height: 21px;
+    }
+  
+  
+    .carousel {
+      padding: 10px; /* Reduce el espacio dentro del carrousel */
+      width: 80%; /* Reduce el ancho del carrousel */
+      margin: 0 auto;
+    }
+
+    .container-carrousel{
+      position: relative;
+    }
+  
+    .square-cont {
+      /* order: 2; /* Cambia el orden de presentación, para que aparezca primero */
+      /* margin-top: 20px; */ 
+      position: absolute;
+      bottom: 2;
+      top: auto;
+      right: 0;
+      margin-left: 60px;
+      
+     
+    }
+
+    footer {
+      margin-top: 530px; /* Ajusta este valor según sea necesario */
+    }
+    
+
+  
+  
+    /* .list {
+      
+      width: calc(160px * 2 + 20px); /* Ajusto el ancho para mostrar solo 2 elementos }*/   
+
+      
+    } 
+
+  
+  /*  ---------------------------------------------------------THE END----------------------------------------------------------- */
+  
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 60rem;
+    
+      background-color: white;
+      padding: 5rem 6rem;
+      border-radius: 5px;
+      box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      transition: all 0.5s;
+    }
+  
+    
+  
+    /* ... (otros estilos específicos para pantallas pequeñas) */
+  
+  
+  .flex-iconos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 110px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .navigation {
+    font-size: 54px;
+    gap: 19;
+  
+  }
+  
+  .navbar{
+    display: flex;
+    padding: 25px;
+    margin: 20px;
+    white-space: 15px;
+  
+  }
+  
+  
+  
+  .navbar button {
+    width: 122px;
+    height: 37px;
+    margin-right: 60px;
+    border-radius: 13px;
+    gap: 3;
+  }
+  
+  .navbar button:hover {
+    background-color: #CCC20A;
+    border-radius: 97px;
+    transition: all ease 0.6s;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 195px;
+    background-color: #5C3FB8;
+    padding: 22px;
+  }
+  
+  .sidebar .logo img {
+    width: 124px;
+  }
+  
+  .sidebar .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .sidebar .navigation ul li {
+    padding: 10px 0px;
+  }
+  
+  
+  .sidebar .navigation ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  
+  
+  .sidebar .navigation ul li a:hover,
+  .sidebar .navigation ul li a:active,
+  .sidebar .navigation ul li a:focus {     
+    color: #CCC20A;
+  }
+  
+  .main-container {
+    margin-left: 240px;
+  }
+  
+  
+  .carrousel {
+    padding: 20px 40px;
+    overflow: hidden;
+  }
